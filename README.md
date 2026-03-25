@@ -217,7 +217,7 @@ This project is licensed under the ISC License - see the LICENSE file for detail
 
 ## 👤 Author
 
-**Adnan Khawaja**
+**Imtiaz Morshed Adnan**
 
 Feel free to reach out for any questions or suggestions!
 
