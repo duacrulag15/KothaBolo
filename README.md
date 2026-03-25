@@ -233,7 +233,7 @@ Feel free to reach out for any questions or suggestions!
 
 <div align="center">
 
-**Made with ❤️ by Adnan Khawaja**
+**Made with ❤️ by Imtiaz Morshed Adnan**
 
 [⬆ Back to Top](#kothbolo---real-time-chat-application)
 
