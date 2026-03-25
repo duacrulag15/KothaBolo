@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&display=swap");
+
+.App {
+  min-height: 100vh;
+  display: flex;
+  transition: background-color 0.3s ease;
+}
+
+/* Card and Modal Styling */
+.chakra-modal__content {
+  border-radius: 12px;
+  box-shadow: 0 10px 40px rgba(16, 163, 127, 0.15);
+  animation: modalSlideIn 0.3s ease-out;
+}
+
+/* Box component enhancements */
+.chakra-box {
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+/* Form controls */
+.chakra-input {
+  border-radius: 6px;
+  transition: all 0.2s;
+}
+
+.chakra-input:focus {
+  border-color: #10A37F !important;
+  box-shadow: 0 0 0 3px rgba(16, 163, 127, 0.1) !important;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(244, 244, 245, 0.5);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #10A37F;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0E8A6B;
+}
+
+/* Animations */
+@keyframes modalSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

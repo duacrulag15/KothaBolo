@@ -1,0 +1,175 @@
+.messages {
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  animation: slideUp 0.3s ease-out;
+}
+
+/* Smooth animations */
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes modalSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(16, 163, 127, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 0 8px rgba(16, 163, 127, 0);
+  }
+}
+
+/* Component transitions */
+.message-component {
+  animation: slideUp 0.3s ease-out;
+  padding: 8px 12px;
+  border-radius: 8px;
+  margin: 4px 0;
+}
+
+.chat-box {
+  animation: fadeIn 0.4s ease-in;
+}
+
+/* Card styling enhancements */
+.chakra-box {
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.chakra-box:hover {
+  box-shadow: 0 4px 12px rgba(16, 163, 127, 0.1);
+}
+
+/* Button hover effects with brand colors */
+button {
+  transition: all 0.2s ease-in-out;
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(16, 163, 127, 0.2);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+/* Input focus styling */
+input:focus {
+  outline: none !important;
+  border-color: #10A37F !important;
+  box-shadow: 0 0 0 3px rgba(16, 163, 127, 0.1) !important;
+}
+
+/* Modal styling */
+.chakra-modal__content {
+  border-radius: 12px;
+  box-shadow: 0 10px 40px rgba(16, 163, 127, 0.15);
+  animation: modalSlideIn 0.3s ease-out;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #10A37F;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0E8A6B;
+}
+
+/* Tooltip styling */
+.chakra-tooltip__popper {
+  border-radius: 6px;
+}
+
+/* Form control styling */
+.chakra-form-control label {
+  font-weight: 500;
+  color: inherit;
+  margin-bottom: 8px;
+}
+
+/* User badge items */
+.user-badge-item {
+  background: linear-gradient(135deg, #10A37F 0%, #0E8A6B 100%);
+  color: white;
+  border-radius: 20px;
+  padding: 4px 12px;
+  font-size: 14px;
+  margin: 4px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  animation: slideUp 0.2s ease-out;
+}
+
+.user-badge-item:hover {
+  box-shadow: 0 4px 12px rgba(16, 163, 127, 0.3);
+}
+
+/* Chat list item */
+.chat-list-item {
+  transition: all 0.2s ease;
+  border-radius: 8px;
+  padding: 8px;
+  margin: 4px 0;
+}
+
+.chat-list-item:hover {
+  background-color: rgba(16, 163, 127, 0.1);
+  transform: translateX(4px);
+}
+
+/* Profile avatar */
+.profile-avatar {
+  border-radius: 50%;
+  border: 3px solid #10A37F;
+  transition: all 0.3s ease;
+}
+
+.profile-avatar:hover {
+  box-shadow: 0 0 16px rgba(16, 163, 127, 0.4);
+}
